@@ -3,23 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Club</title>
+    <title>Nexus Tech Club | Ignite Your Future</title>
+
     {% load static %}
     <link rel="stylesheet" href="{% static 'webpage/home.css'%}">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <h1>School Club</h1>
-        <div class="navs">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/register">Register</a>
+
+    <nav class="navbar">
+        <div class="logo">NEXUS<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <button class="register-btn-nav">Register Now</button>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="fade-in">Connect. Build. <span>Innovate.</span></h1>
+            <p class="fade-in">Join the premier community for creators and thinkers. From coding marathons to design sprints, find your place at Nexus.</p>
+            <div class="hero-btns fade-in">
+                <button class="cta-main">Join the Club</button>
+                <button class="cta-alt">View Events</button>
+            </div>
         </div>
-    </div>
+        <div class="hero-visual">
+            <div class="blob"></div>
+        </div>
+    </header>
 
-    
-
+    <section class="features">
+        <div class="card">
+            <h3>Weekly Workshops</h3>
+            <p>Hands-on sessions with industry-standard tools and frameworks.</p>
+        </div>
+        <div class="card">
+            <h3>Hackathons</h3>
+            <p>24-hour sprints to turn wild ideas into working prototypes.</p>
+        </div>
+        <div class="card">
+            <h3>Networking</h3>
+            <p>Connect with alumni and professionals in your field of interest.</p>
+        </div>
+    </section>
 
 </body>
 </html>
