@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'webpage_css/events.css'%}">
+</head>
+<body>
+    <h1>Upcoming Events</h1>
+    {% for event in events %}
+
+        <div class="event">
+            <h2>{{ event.name }} </h2>
+            <p><strong>Date:</strong> {{ event.date }}</p>
+            <p>{{ event.description }}</p>
+        </div>
+        
+    {% endfor %}
+    
+</body>
+</html>
