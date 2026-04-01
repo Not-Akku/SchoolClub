@@ -37,3 +37,29 @@ def events (request):
     }
 
     return render(request, "webpage/event.html", context)
+
+#=============================================================
+# This is the view for the projects page of the website.
+#=============================================================
+
+def projects(request):
+    projects = [
+        {
+            "name": "Smart Home Automation",
+            "description": "A project to automate home appliances using IoT technology.",
+        },
+        {
+            "name": "AI Chatbot",
+            "description": "A chatbot that can answer questions and provide information on various topics.",
+        },
+        {
+            "name": "Virtual Reality Game",
+            "description": "A game that immerses players in a virtual reality environment.",
+        },
+    ]
+
+    context = {
+        "projects": projects,
+    }
+
+    return render(request, "webpage/projects.html", context)
